@@ -25,9 +25,10 @@ class MyApp extends StatelessWidget {
                   data: ThemeData(
                     primarySwatch: Colors.blue,
                   ),
-                  child: const Component());
+                  child:Component());
             },
           );
-        }));
+        }),
+        child: const Component());
   }
 }
