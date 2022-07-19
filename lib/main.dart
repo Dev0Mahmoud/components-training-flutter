@@ -14,21 +14,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: const Size(414, 896),
-        builder: ((context, child) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: 'Flutter Demo',
-            builder: (context, child) {
-              ScreenUtil.init(context);
-              return Theme(
-                  data: ThemeData(
-                    primarySwatch: Colors.blue,
-                  ),
-                  child:Component());
-            },
-          );
-        }),
-        child: const Component());
+      designSize: const Size(414, 896),
+      builder: ((context, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          home: const Component(),
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+        );
+      }),
+    );
   }
 }
