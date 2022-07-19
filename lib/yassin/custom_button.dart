@@ -22,10 +22,6 @@ class CustomButton extends StatelessWidget {
           child: const Center(
               child: Text(
             'ارسل',
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
           ))),
       onTap: () {
         print('tapped');
