@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/yassin/custom_notification_row.dart';
 import 'package:flutter_application_1/yassin/custom_text_field.dart';
 
 class Component extends StatelessWidget {
@@ -7,7 +8,7 @@ class Component extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Scaffold(body: Center(child: CustomTextField())),
+      child: Scaffold(body: Center(child: CustomNotificationRow())),
     );
   }
 }
