@@ -5,6 +5,8 @@ import 'package:flutter_application_1/yassin/custom_text_field.dart';
 import 'package:flutter_application_1/yassin/product_view/product_view.dart';
 
 import 'amr_componant/view/progress_card.dart';
+import 'mahmoud/my_components.dart';
+import 'mahmoud/rating_bar.dart';
 
 class Component extends StatelessWidget {
   Component({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class Component extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(),
+       body: MComponent(),
       ),
     );
   }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-Widget taskScrollbar ({required context,required ScrollController scrollController})=> Theme(
+Widget taskScrollbar ({
+  required context,
+  required ScrollController scrollController
+  })=> Theme(
 
   data: Theme.of(context).copyWith(
     scrollbarTheme: ScrollbarThemeData(
