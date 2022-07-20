@@ -7,6 +7,8 @@ import 'package:flutter_application_1/yassin/product_view/product_view.dart';
 import 'amr_componant/view/draggable_bottom_sheet.dart';
 import 'amr_componant/view/driver_card.dart';
 import 'amr_componant/view/progress_card.dart';
+import 'mahmoud/my_components.dart';
+import 'mahmoud/rating_bar.dart';
 
 class Component extends StatelessWidget {
   Component({Key? key}) : super(key: key);
@@ -16,7 +18,7 @@ class Component extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        body: Container(),
+       body: MComponent(),
       ),
     );
   }
