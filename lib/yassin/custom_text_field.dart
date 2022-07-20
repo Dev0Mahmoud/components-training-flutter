@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 //! https://ibb.co/r6xfkzK
 class CustomTextField extends StatelessWidget {
   const CustomTextField({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class CustomTextField extends StatelessWidget {
     return SizedBox(
       width: 300.w,
       child: TextFormField(
+        readOnly: true,
         decoration: InputDecoration(
           labelText: 'Name',
           labelStyle: TextStyle(

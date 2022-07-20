@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/component.dart';
+import 'package:flutter_application_1/yassin/drop%20down%20check%20list/cubit/check_list_cubit.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
   await ScreenUtil.ensureScreenSize();
 
-  runApp(const MyApp());
+  BlocOverrides.runZoned(
+    () => runApp(const MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +23,8 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
-          home: const Component(),
+          home: BlocProvider(
+              create: (context) => CheckListCubit(), child: const Component()),
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
