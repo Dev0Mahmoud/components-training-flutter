@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_application_1/mahmoud/rating_bar.dart';
 import 'package:flutter_application_1/mahmoud/scrollbar.dart';
+import 'package:flutter_application_1/mahmoud/slider.dart';
 
 class MComponent extends StatelessWidget {
   final ScrollController scrollController = ScrollController();
@@ -12,7 +13,10 @@ class MComponent extends StatelessWidget {
     return  Scaffold(
       body: SafeArea(
 
-        child: taskRatebar(),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: MySlider(),
+        ),
 
       ),
     );
